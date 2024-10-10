@@ -28,7 +28,15 @@ SELECT companies.name FROM companies Inner join employees ON employees.Company=c
 
 
 select name from students where points=(SELECT MAX(points) from students);
+#1: Basma, Robert, Jana, and Alexandra have the highest number of points
+
 select AVG(points) from students;
+#2: the average number of points is 375
+
 select COUNT(Name) from students where points=500;
+#3: 4 students have 500 points
+
 select Name from students WHERE Name GLOB '*s*';
+#4: Basma and Hasan have names that contain s
+
 select name from students ORDER BY points DESC;
